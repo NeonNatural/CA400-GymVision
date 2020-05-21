@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">GymVision</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_home">Home</string>
+    <string name="check_failed">Check failed</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+
+
+
+
+    <!--Feedback summary view resources-->
+
+    <string name="squat_subtitle">Below are the results from the exercise checks performed to evaluate your squat form and insure that your form is safe</string>
+    <string name="shoulder_press_subtitle">Below are the results from the exercise checks performed to evaluate your shoulder press form and insure that your form is safe</string>
+    <string name="deadlift_subtitle">Below are the results from the exercise checks performed to evaluate your Dead Lift form and insure that your form is safe</string>
+    <string name="benchpress_subtitle">Below are the results from the exercise checks performed to evaluate your Bench press form and insure that your form is safe</string>
+    <string name="bentOverRow_subtitle">Below are the results from the exercise checks performed to evaluate your Bent over row form and insure that your form is safe</string>
+    <string name="lunge_subtitle">Below are the results from the exercise checks performed to evaluate your Lunge form and insure that your form is safe</string>
+    <string name="skullCrushers_subtitle">Below are the results from the exercise checks performed to evaluate your Skull Crushers form and insure that your form is safe</string>
+
+
+    <string name="passed_check">Passed check</string>
+    <string name="not_passed_check">Check failed</string>
+
+    <string name="shoulderpress_wristcheck">Your wrists were in line with your elbows when beginning the shoulder press, this is the safe and correct starting position</string>
+    <string name="shoulderpress_failedwristcheck">Your wrists were not in line with your elbows when beginning the shoulder press,insure that you align your wrists with your elbow for correct and safe form.</string>
+    <string name="deadliftwide">our was not too wide, make sure to check that your grip is also not too close</string>
+    <string name="deadlifttoowide">Your deadlift grip was too wide, you should bring your arms closer. Your grip should be just past hip width.</string>
+    <string name="deadliftclose">Your was not too close, make sure to check that your grip is also not too wide </string>
+    <string name="deadliftooclose">Your grip is too close. Your grip should be just past hip width</string>
+
+
+    <string name="network_error_user_missing">User not found!</string>
+    <string name="login">Login</string>
+</resources>

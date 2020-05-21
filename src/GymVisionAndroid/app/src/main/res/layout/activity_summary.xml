@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/include_toolbar" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/success1"
+        android:layout_width="301dp"
+        android:layout_height="158dp"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sequenceLayout"
+        app:layout_constraintVertical_bias="1.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/success" />
+    <com.airbnb.lottie.LottieAnimationView
+
+        android:id="@+id/failed1"
+        android:layout_width="301dp"
+        android:layout_height="158dp"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sequenceLayout"
+        app:layout_constraintVertical_bias="1.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/failed" />
+
+    <com.transferwise.sequencelayout.SequenceLayout
+        android:id="@+id/sequenceLayout"
+        android:layout_width="351dp"
+        android:layout_height="584dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.601"
+        app:progressForegroundColor="#00F7FF">
+
+        <com.transferwise.sequencelayout.SequenceStep
+            android:id="@+id/exercisename"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            app:active="false"
+            app:anchor="Outcome list"
+            app:subtitle=""
+            app:title="Title"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <com.transferwise.sequencelayout.SequenceStep
+            android:id="@+id/check1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:anchor="First Check"
+            app:subtitle=""
+            app:title="First check"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <com.transferwise.sequencelayout.SequenceStep
+            android:id="@+id/check2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:anchor="Second Check"
+            app:subtitle=""
+            app:title=""
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Title"
+            tools:visibility="visible" />
+
+        <com.transferwise.sequencelayout.SequenceStep
+            android:id="@+id/check3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:anchor="Third Check"
+            app:subtitle=""
+            app:title=""
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Title"
+            tools:visibility="visible" />
+
+        <com.transferwise.sequencelayout.SequenceStep
+            android:id="@+id/check4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:anchor="Fourth Check"
+            app:subtitle=""
+            app:title=""
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Title"
+            tools:visibility="visible" />
+
+    </com.transferwise.sequencelayout.SequenceLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5bc6de</color>
+    <color name="colorPrimaryDark">#5bc6de</color>
+    <color name="colorAccent">#7376e6</color>
+
+    /* intro
+    <color name="gradient_start">#58ade0</color>
+    <color name="gradient_end_color">#7376e6</color>
+
+
+    <color name="white">#ffff</color>
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_description_color">#656565</color>
+
+</resources>

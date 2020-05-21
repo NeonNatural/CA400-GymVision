@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gymvision">
+
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
+    <application
+
+
+        android:allowBackup="true"
+
+
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/gymvision_icon"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ui.HomeActivity"
+            android:label="@string/title_activity_home" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".camera.InferenceActivity"
+            android:label="Camera" />
+
+
+        <activity
+            android:name=".intro.IntroActivity"
+           >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ui.welcome.LoginActivity"
+            android:label="GymVision">
+
+        </activity>
+        <activity android:name=".ui.welcome.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.welcome.ResetPassActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.ExerciseMangement.SummaryActivity" android:screenOrientation="portrait"/>
+
+
+
+
+
+        <service
+            android:name="ai.fritz.core.FritzCustomModelService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+
+</manifest>

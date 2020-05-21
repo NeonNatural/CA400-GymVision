@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "750952290074",
+    "firebase_url": "https://gymvision-264f8.firebaseio.com",
+    "project_id": "gymvision-264f8",
+    "storage_bucket": "gymvision-264f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750952290074:android:a312ddec4a5377b8273ea3",
+        "android_client_info": {
+          "package_name": "com.example.gymvision"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "750952290074-d6dg00ogl4q2fg181uqil988iea9ra0j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gymvision",
+            "certificate_hash": "ac0166f45b7024d8affa9fa3fef8e6b057648d5b"
+          }
+        },
+        {
+          "client_id": "750952290074-ef3cpjfm44rod2urm6uupnm1ptm30oti.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkfq2NIX2ZzxoRWbMxErtFX6wnNhT6v9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "750952290074-ef3cpjfm44rod2urm6uupnm1ptm30oti.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

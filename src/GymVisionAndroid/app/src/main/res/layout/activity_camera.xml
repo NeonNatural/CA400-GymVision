@@ -1,0 +1,239 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <!--
+   <TextView
+       android:id="@+id/timer"
+       android:layout_width="43dp"
+       android:layout_height="42dp"
+
+       android:text="20"
+       android:textColor="@color/colorPrimary"
+
+       android:textSize="30sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toTopOf="@+id/timerButton"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="@+id/guideline4"
+       app:layout_constraintVertical_bias="0.969" />&ndash;&gt;-->
+
+
+   <!--   <com.google.android.material.button.MaterialButton
+       android:id="@+id/timerButton"
+       android:layout_width="136dp"
+       android:layout_height="41dp"
+       android:layout_marginBottom="16dp"
+       android:background="@drawable/reg_btn_style"
+       android:backgroundTint="#FD597A"
+       android:text="Start"
+       android:textColor="#ffffff"
+       app:cornerRadius="24dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="@+id/guideline4"
+       app:layout_constraintVertical_bias="1.0" />-->
+
+   <FrameLayout
+       android:id="@+id/camera"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       tools:layout_editor_absoluteX="0dp"
+       tools:layout_editor_absoluteY="0dp">
+
+
+
+   </FrameLayout>
+
+   <TextView
+       android:id="@+id/title"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+
+       android:layout_marginBottom="28dp"
+       android:text="Hello"
+       android:textColor="@color/colorPrimary"
+       android:textSize="30sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toStartOf="@+id/timer"
+       app:layout_constraintStart_toEndOf="@+id/timer"
+       app:layout_constraintTop_toTopOf="@+id/guideline4"
+       app:layout_constraintVertical_bias="1.0" />
+
+   <TextView
+       android:id="@+id/startStop"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+
+       android:layout_marginBottom="28dp"
+       android:text="Start/stop the timer"
+       android:textColor="@color/colorPrimary"
+       android:textSize="15sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toStartOf="@+id/timer"
+       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintStart_toEndOf="@+id/timer"
+       app:layout_constraintTop_toTopOf="@+id/guideline4"
+       app:layout_constraintVertical_bias="0.678" />
+
+   <TextView
+       android:id="@+id/timerSet"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+
+       android:layout_marginBottom="28dp"
+       android:text="30"
+       android:textColor="@color/colorPrimary"
+       android:textSize="35sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toStartOf="@+id/timer"
+       app:layout_constraintStart_toEndOf="@+id/timer"
+       app:layout_constraintTop_toTopOf="@+id/guideline4"
+       app:layout_constraintVertical_bias="0.826" />
+
+   <com.shinelw.library.ColorArcProgressBar
+       android:id="@+id/timer"
+       android:layout_width="13dp"
+       android:layout_height="7dp"
+       android:layout_gravity="center_horizontal"
+       app:back_color="@android:color/background_light"
+       app:back_width="2dp"
+       app:front_color1="#00F7FF"
+       app:front_color2="#0090FF"
+       app:front_color3="#002AFF"
+       app:front_width="10dp"
+       app:is_need_content="false"
+
+       app:is_need_unit="false"
+       app:layout_constraintBottom_toBottomOf="parent"
+
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.498"
+
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="1.0"
+       app:max_value="30"
+       app:string_unit="Press here to Start/Stop"
+       app:total_engle="270" />
+
+
+   <TextView
+       android:id="@+id/exer_check_1"
+       android:layout_width="200dp"
+       android:layout_height="35dp"
+
+       android:layout_marginStart="8dp"
+       android:text="checker"
+
+       android:textColor="@color/colorAccent"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       android:visibility="invisible"
+       app:layout_constraintBottom_toTopOf="@+id/exer_check_2"
+       app:layout_constraintStart_toStartOf="@+id/guideline5"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="1.0" />
+
+   <TextView
+       android:id="@+id/exer_check_2"
+       android:layout_width="200dp"
+       android:layout_height="35dp"
+
+       android:layout_marginStart="8dp"
+
+       android:text="checker"
+       android:textColor="@color/colorAccent"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       android:visibility="invisible"
+       app:layout_constraintBottom_toTopOf="@+id/exer_check_3"
+       app:layout_constraintStart_toStartOf="@+id/guideline5" />
+
+   <TextView
+       android:id="@+id/exer_check_3"
+       android:layout_width="200dp"
+       android:layout_height="35dp"
+       android:layout_marginStart="8dp"
+       android:text="checker"
+       android:textColor="@color/colorAccent"
+
+
+       android:textSize="20sp"
+       android:textStyle="bold"
+       android:visibility="invisible"
+       app:layout_constraintBottom_toTopOf="@+id/guideline4"
+       app:layout_constraintStart_toStartOf="@+id/guideline5" />
+
+
+   <TextView
+       android:id="@+id/exer_check_4"
+       android:layout_width="200dp"
+       android:layout_height="35dp"
+       android:layout_marginStart="8dp"
+
+
+       android:text="checker"
+       android:textColor="@color/colorAccent"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       android:visibility="invisible"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="1.0"
+       app:layout_constraintStart_toStartOf="@+id/guideline5"
+       app:layout_constraintTop_toBottomOf="@+id/exer_check_3" />
+
+   <androidx.constraintlayout.widget.Guideline
+       android:id="@+id/guideline4"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       app:layout_constraintGuide_begin="194dp" />
+
+   <androidx.constraintlayout.widget.Guideline
+       android:id="@+id/guideline5"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       app:layout_constraintGuide_begin="199dp" />
+
+   <ImageButton
+       android:id="@+id/overlay_switch"
+       android:layout_width="50dp"
+       android:layout_height="38dp"
+       android:backgroundTint="@color/colorPrimary"
+       app:layout_constraintBottom_toTopOf="@+id/exer_check_1"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.864"
+       app:layout_constraintStart_toStartOf="@+id/guideline5"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.0"
+       app:srcCompat="@drawable/ic_overlay_24dp" />
+  <!--
+   <com.google.android.material.button.MaterialButton
+       android:id="@+id/overlay_switch"
+       android:layout_width="94dp"
+       android:layout_height="38dp"
+       android:text="overlay"
+
+       app:layout_constraintBottom_toTopOf="@+id/squatcheck"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.864"
+       app:layout_constraintStart_toStartOf="@+id/guideline5"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.0" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
